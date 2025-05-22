@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Festival Musik Indonesia</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <!-- animasi intro -->
+    <div class="intro-overlay" id="introOverlay">
+        <div class="intro-logo">Festival Musik</div>
+        <div class="intro-tagline">Pengalaman Musik Terbaik 2025</div>
+        <div class="loading-bar">
+            <div class="loading-progress"></div>
+        </div>
+    </div>
+
+    <!-- transisi halaman -->
+    <div class="page-transition" id="pageTransition"></div>
+
+    <!-- background parallax -->
+    <div class="bg-parallax"></div>
+    <div class="bg-overlay"></div>
+
+    <!-- header -->
+    <header>
+        <nav>
+            <div class="logo">Festival Musik</div>
+            <ul class="nav-links">
+                <li><a href="#home">Beranda</a></li>
+                <li><a href="#about">Tentang</a></li>
+                <li><a href="#tickets">Tiket</a></li>
+                <li><a href="#contact">Kontak</a></li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- main content -->
+    <main>
+        <!-- seksi utama -->
+        <section id="home" class="hero">
+            <h1>Festival Musik Indonesia 2025</h1>
+            <p>Pengalaman musik terbaik tahun ini dengan penampil-penampil terbaik dari seluruh Indonesia</p>
+            <a href="#tickets" class="btn">Beli Tiket Sekarang</a>
+        </section>
+
+        <div class="container">
+            <!-- seksi about/tentang -->
+            <section id="about" class="about">
+                <h2>Tentang Festival</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>Festival Musik Indonesia 2025 adalah acara musik terbesar tahun ini yang akan menampilkan berbagai genre musik dari seluruh Indonesia. Festival ini akan berlangsung selama 3 hari penuh dengan lebih dari 50 penampil yang akan menghibur Anda di 4 panggung berbeda.</p>
+                        <br>
+                        <p>Nikmati pengalaman musik terbaik dengan sistem suara berkualitas tinggi, area makanan dan minuman yang luas, dan berbagai aktivitas menarik lainnya. Festival ini cocok untuk semua usia dan akan menjadi pengalaman yang tak terlupakan bagi penggemar musik.</p>
+                        <br>
+                        <p>Jangan lewatkan kesempatan untuk menikmati penampilan langsung dari artis-artis favorit Anda. Pastikan Anda mendapatkan tiket sebelum kehabisan!</p>
+                    </div>
+                    <div class="about-image">
+                        <img src="/api/placeholder/600/400" alt="Festival Musik">
+                    </div>
+                </div>
+                
+                <!-- seksi video promo/highlight event -->
+                <div class="video-section">
+                    <h3>Video Highlight Festival</h3>
+                    <div class="video-container">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/zr779sxbUpo?si=xPEg9pP7zv0vdiUl" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </section>
+
+            <!-- seksi tiket -->
+            <section id="tickets" class="tickets">
+                <h2>Beli Tiket</h2>
+                <div class="ticket-cards">
+                    <div class="ticket-card">
+                        <div class="ticket-name">Tiket Reguler</div>
+                        <div class="ticket-price">Rp 350.000</div>
+                        <ul class="ticket-features">
+                            <li>Akses ke semua panggung</li>
+                            <li>Area umum</li>
+                            <li>Tiket untuk 1 hari</li>
+                        </ul>
+                        <a href="#" class="btn">Beli Sekarang</a>
+                    </div>
+                    <div class="ticket-card">
+                        <div class="ticket-name">Tiket VIP</div>
+                        <div class="ticket-price">Rp 1.500.000</div>
+                        <ul class="ticket-features">
+                            <li>Akses ke semua panggung dan backstage</li>
+                            <li>Area VIP dengan lounge</li>
+                            <li>Tiket untuk 3 hari</li>
+                            <li>Meet & Greet dengan artis</li>
+                            <li>Makanan dan minuman gratis</li>
+                        </ul>
+                        <a href="#" class="btn">Beli Sekarang</a>
+                    </div>
+                </div>
+                
+                <!-- countdown timer -->
+                <div class="countdown-section">
+                    <h3>Countdown Festival</h3>
+                    <div class="countdown">
+                        <div class="countdown-box">
+                            <div class="countdown-number" id="days">00</div>
+                            <div class="countdown-label">Hari</div>
+                        </div>
+                        <div class="countdown-box">
+                            <div class="countdown-number" id="hours">00</div>
+                            <div class="countdown-label">Jam</div>
+                        </div>
+                        <div class="countdown-box">
+                            <div class="countdown-number" id="minutes">00</div>
+                            <div class="countdown-label">Menit</div>
+                        </div>
+                        <div class="countdown-box">
+                            <div class="countdown-number" id="seconds">00</div>
+                            <div class="countdown-label">Detik</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- seksi kontak -->
+            <section id="contact" class="contact">
+                <h2>Hubungi Kami</h2>
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Nama</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subjek</label>
+                            <input type="text" id="subject" name="subject" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Pesan</label>
+                            <textarea id="message" name="message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn">Kirim Pesan</button>
+                    </form>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- footer -->
+    <footer>
+        <p>&copy; 2025 Festival Musik Indonesia</p>
+        <p>Code by <a href="https://github.com/">Jefanniel Nathan </a>&#10084; </p>
+    </footer>
+
+<script src="index.js"></script>
+</body>
+</html>
